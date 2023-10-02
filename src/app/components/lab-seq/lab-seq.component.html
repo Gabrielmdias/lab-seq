@@ -1,0 +1,16 @@
+<form>
+    <br>
+
+    <mat-form-field class="form">
+        <mat-label>LabSeq calculator</mat-label>
+        <input matInput [(ngModel)]="inputValue" name="inputValue" type="number" placeholder="Enter a value">
+    </mat-form-field>
+
+    <button mat-button color="primary" (click)="calculate()" mat-stroked-button color="primary">Calculate</button>
+
+    <div>
+        <mat-label matPrefix>Operation Result: </mat-label>
+        <mat-label>{{result}}</mat-label>
+    </div>
+    
+</form>
